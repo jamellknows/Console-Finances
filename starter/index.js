@@ -87,20 +87,20 @@ var finances = [
 ['Feb-2017', 671099]
 ];
 
-// Calculating the total number of months 
+// Calculating the totalMonths number of numMonths 
 
-let months = 0 
+let numMonths = 0 
 
-for(months in finances){
-    months++
+for(numMonths in finances){
+    numMonths++
 }
 
-// Calculating the total
-let total = 0
+// Calculating the totalMonths
+let totalMonths = 0
 
 for(let i = 0; i < finances.length; i++)
 {
-    total = total +  finances[i][1]
+    totalMonths = totalMonths +  finances[i][1]
 }
 
 
@@ -112,23 +112,23 @@ for(let i = 0; i < finances.length-1; i++)
     change.push(finances[i][1] - finances[i+1][1])
 
 }
-let sum = 0
+let sumOfChange = 0
 for(let i = 0; i < change.length -1; i++)
 {
-    sum += change[i]
+    sumOfChange += change[i]
 }
-avChange = parseFloat(sum)/months 
+avChange = parseFloat(sumOfChange)/numMonths 
 
-let max = Math.max(...change)
-let min = Math.min(...change)
+let maxChange = Math.max(...change)
+let minChange = Math.min(...change)
 
 // finding the month for the greatest increase and decrease 
 
-let indMax = change.indexOf(max)
-let indMin = change.indexOf(min)
+let indmaxChange = change.indexOf(maxChange)
+let indminChange = change.indexOf(minChange)
 
-let monthMax = finances[indMax][0]
-let monthMin = finances[indMin][0]
+let monthmaxChange = finances[indmaxChange][0]
+let monthminChange = finances[indminChange][0]
 
 
 
@@ -137,10 +137,10 @@ console.log(
     "\n"+
     "Financial Analysis\n" +
     "=====================\n"+
-    "Total Months: " + months + "\n" + 
-    "Total: $"+ total + "\n" +
+    "Total Months: " + numMonths + "\n" + 
+    "Total: $"+ totalMonths + "\n" +
     "Average Change: $"+ avChange.toFixed(2) + "\n" +
-    "Greatest Increase in Profits: "+ monthMax + " " + "($" + max + ")" + "\n"+
-    "Greatest Decrease in Profits: " + monthMin + " " + "($" + min + ")" + "\n"
+    "Greatest Increase in Profits: "+ monthmaxChange + " " + "($" + maxChange + ")" + "\n"+
+    "Greatest Decrease in Profits: " + monthminChange + " " + "($" + minChange + ")" + "\n"
     
 )
