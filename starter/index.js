@@ -135,7 +135,7 @@ for(let i = 0 ; i < change.length; i++ )
 // Final results 
 console.log(
     "\n"+
-    "Finanacial Analysis\n" +
+    "Financial Analysis\n" +
     "=====================\n"+
     "Total Months: " + months + "\n" + 
     "Total: $"+ total + "\n" +
