@@ -94,15 +94,23 @@ let months = 0
 for(months in finances){
     months++
 }
-console.log(months)
-console.log(finances.length)
+
+// Calculating the total
+let total = 0
+
+for(let i = 0; i < finances.length; i++)
+{
+    total = total +  finances[i][1]
+}
+console.log("The total is " + total)
+
 
 console.log(
     "\n"+
     "Finanacial Analysis\n" +
     "=====================\n"+
     "Total Months: " + months + "\n" + 
-    "Total:\n"+
+    "Total: "+ total + "\n" +
     "Average Change:\n"+
     "Greatest Increase in Profits:\n"+
     "Greatest Decrease in Profits:\n"
