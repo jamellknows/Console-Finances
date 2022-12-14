@@ -118,18 +118,10 @@ for(let i = 0; i < change.length -1; i++)
     sum += change[i]
 }
 avChange = parseFloat(sum)/months 
-//const sum = change.reduce((a,b) => a + b, 0)
-//avChange = sum/months
 
+let max = Math.max(...change)
+let min = Math.min(...change)
 
-// Calculating the greatest increase
-for(let i = 0 ; i < change.length; i++ )
-{
-
-}
-
-
-// Calculating the greatest decrease
 
 
 // Final results 
@@ -139,8 +131,8 @@ console.log(
     "=====================\n"+
     "Total Months: " + months + "\n" + 
     "Total: $"+ total + "\n" +
-    "Average Change: "+ avChange.toFixed(2) + "\n" +
-    "Greatest Increase in Profits:\n"+
-    "Greatest Decrease in Profits:\n"
+    "Average Change: $"+ avChange.toFixed(2) + "\n" +
+    "Greatest Increase in Profits: $"+ max + "\n"+
+    "Greatest Decrease in Profits: $" + min + "\n"
     
 )
