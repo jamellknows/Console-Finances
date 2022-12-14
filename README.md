@@ -8,12 +8,9 @@ This weeks module challenge was to create a Javascript file to calculate financi
 ## Table of Contents (Optional)
 
 
-
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-
-
 
 
 ## Usage 
@@ -21,11 +18,9 @@ This weeks module challenge was to create a Javascript file to calculate financi
 This is the fourth module challenge and is a financial analysis tool. 
 
 
-
 ![mobile screen screenshot](./images/cf1.png)
 
 ![mobile screen screenshot](./images/cf2.png)
-
 
 
 
@@ -59,18 +54,11 @@ SOFTWARE.
 
 ## Features
 
-* Semantic HTML tags
-* Alt tags
-* CSS Media Queries
+* Console Logs
+* Use of the Math function
+* The Spread ... operator
 
 
-## Contributing
-
-If you created an application or package and would like other developers to contribute it, you will want to add guidelines for how to do so. The [Contributor Covenant](https://www.contributor-covenant.org/) is an industry standard, but you can always write your own.
-
-## Tests
-
-Go the extra mile and write tests for your application. Then provide examples on how to run them.
 
 ---
 
