@@ -86,3 +86,25 @@ var finances = [
 ['Jan-2017', 138230],
 ['Feb-2017', 671099]
 ];
+
+// Calculating the total number of months 
+
+let months = 0 
+
+for(months in finances){
+    months++
+}
+console.log(months)
+console.log(finances.length)
+
+console.log(
+    "\n"+
+    "Finanacial Analysis\n" +
+    "=====================\n"+
+    "Total Months: " + months + "\n" + 
+    "Total:\n"+
+    "Average Change:\n"+
+    "Greatest Increase in Profits:\n"+
+    "Greatest Decrease in Profits:\n"
+    
+)
