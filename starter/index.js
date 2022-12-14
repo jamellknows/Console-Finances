@@ -102,16 +102,44 @@ for(let i = 0; i < finances.length; i++)
 {
     total = total +  finances[i][1]
 }
-console.log("The total is " + total)
 
 
+// Calculating the average change 
+let avChange = 0;
+const change = []
+for(let i = 0; i < finances.length-1; i++)
+{
+    change.push(finances[i][1] - finances[i+1][1])
+
+}
+let sum = 0
+for(let i = 0; i < change.length -1; i++)
+{
+    sum += change[i]
+}
+avChange = parseFloat(sum)/months 
+//const sum = change.reduce((a,b) => a + b, 0)
+//avChange = sum/months
+
+
+// Calculating the greatest increase
+for(let i = 0 ; i < change.length; i++ )
+{
+
+}
+
+
+// Calculating the greatest decrease
+
+
+// Final results 
 console.log(
     "\n"+
     "Finanacial Analysis\n" +
     "=====================\n"+
     "Total Months: " + months + "\n" + 
-    "Total: "+ total + "\n" +
-    "Average Change:\n"+
+    "Total: $"+ total + "\n" +
+    "Average Change: "+ avChange.toFixed(2) + "\n" +
     "Greatest Increase in Profits:\n"+
     "Greatest Decrease in Profits:\n"
     
