@@ -122,6 +122,14 @@ avChange = parseFloat(sum)/months
 let max = Math.max(...change)
 let min = Math.min(...change)
 
+// finding the month for the greatest increase and decrease 
+
+let indMax = change.indexOf(max)
+let indMin = change.indexOf(min)
+
+let monthMax = finances[indMax][0]
+let monthMin = finances[indMin][0]
+
 
 
 // Final results 
@@ -132,7 +140,7 @@ console.log(
     "Total Months: " + months + "\n" + 
     "Total: $"+ total + "\n" +
     "Average Change: $"+ avChange.toFixed(2) + "\n" +
-    "Greatest Increase in Profits: $"+ max + "\n"+
-    "Greatest Decrease in Profits: $" + min + "\n"
+    "Greatest Increase in Profits: "+ monthMax + " " + "($" + max + ")" + "\n"+
+    "Greatest Decrease in Profits: " + monthMin + " " + "($" + min + ")" + "\n"
     
 )
